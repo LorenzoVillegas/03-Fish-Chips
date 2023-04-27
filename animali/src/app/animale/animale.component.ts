@@ -9,5 +9,11 @@ import { Animali } from '../models/animal.model';
 export class AnimaleComponent {
 @Input() animale: Animali;
 
+fullname_class: string = "animale-fullname";
+
+ngInit() {
+  this.fullname_class = this.animale.verso;
+}
+
 
 }

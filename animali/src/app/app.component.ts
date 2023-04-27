@@ -36,5 +36,8 @@ export class AppComponent {
     }
  ];
 
- 
+ onClick(){
+  this.animali = this.animali.sort((a, b) => a.nome.localeCompare(b.nome));
+}
+
 }
